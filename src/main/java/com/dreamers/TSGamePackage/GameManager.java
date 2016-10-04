@@ -5,7 +5,6 @@ import com.dreamers.Moves.ts.BlindChangeMove;
 import com.dreamers.Moves.Move;
 import com.dreamers.Moves.SkipMove;
 import com.dreamers.GameCore.Player;
-import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.LinkedList;

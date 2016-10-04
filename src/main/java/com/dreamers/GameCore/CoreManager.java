@@ -1,18 +1,9 @@
 package com.dreamers.GameCore;
 
 import com.dreamers.Moves.Move;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
-import static org.springframework.web.bind.annotation.RequestMethod.GET;
-
-@RestController
-@RequestMapping(value = "/main")
 class CoreManager {
 
     //change to iOC
@@ -23,20 +14,14 @@ class CoreManager {
     CoreManager(CoreManagerDelegate gameManager) {
         this.gameManager = gameManager;
     }
-    CoreManager(){
-        //
-    }
 
-    @RequestMapping(value = "/start", method = GET)
     void startGame() {
 
         //getting initial game configuration
         //...
 
         //getting game credentials
-        //TODO can I write some info through socket here?
         List<Player> players = gameManager.getPlayersQuantityAndNicknames();
-        new ResponseEntity<>(players,HttpStatus.OK);
 
         //game will be played until its over
         while (!gameManager.gameOver()) {
