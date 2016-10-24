@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" name="serverCards:war">
-    <output-path>$PROJECT_DIR$/target</output-path>
-    <root id="archive" name="CardServer-1.0-SNAPSHOT.war">
-      <element id="artifact" artifact-name="serverCards:war exploded" />
-    </root>
-  </artifact>
-</component>
