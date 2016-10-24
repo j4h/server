@@ -1,9 +1,9 @@
-package com.dreamers.TSGamePackage;
+package com.dreamers.threeSticks;
 
-import com.dreamers.Moves.ts.DoubleShuffleMove;
-import com.dreamers.Moves.Move;
-import com.dreamers.Moves.ts.SingleShuffleMove;
-import com.dreamers.Moves.SkipMove;
+import com.dreamers.moves.ts.DoubleShuffleMove;
+import com.dreamers.moves.Move;
+import com.dreamers.moves.ts.SingleShuffleMove;
+import com.dreamers.moves.SkipMove;
 
 class Reader {
 

@@ -1,4 +1,4 @@
-package com.dreamers.GameCore;
+package com.dreamers.core;
 
 public interface CoreManagerDelegate extends CoreManagerDataSource {
 

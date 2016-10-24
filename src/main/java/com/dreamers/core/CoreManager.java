@@ -1,6 +1,6 @@
-package com.dreamers.GameCore;
+package com.dreamers.core;
 
-import com.dreamers.Moves.Move;
+import com.dreamers.moves.Move;
 
 import java.util.List;
 

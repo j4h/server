@@ -1,7 +1,7 @@
-package com.dreamers.TSGamePackage;
+package com.dreamers.threeSticks;
 
-import com.dreamers.GameCore.Card;
-import com.dreamers.GameCore.MovePerformDataSource;
+import com.dreamers.core.Card;
+import com.dreamers.core.MovePerformDataSource;
 
 import java.util.ArrayList;
 import java.util.List;

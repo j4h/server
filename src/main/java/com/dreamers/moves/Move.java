@@ -1,9 +1,9 @@
-package com.dreamers.Moves;
+package com.dreamers.moves;
 
-import com.dreamers.GameCore.Card;
-import com.dreamers.GameCore.GameTable;
-import com.dreamers.GameCore.MovePerformDataSource;
-import com.dreamers.GameCore.Player;
+import com.dreamers.core.Card;
+import com.dreamers.core.GameTable;
+import com.dreamers.core.MovePerformDataSource;
+import com.dreamers.core.Player;
 
 import java.util.List;
 

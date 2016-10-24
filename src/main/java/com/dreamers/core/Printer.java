@@ -1,4 +1,4 @@
-package com.dreamers.GameCore;
+package com.dreamers.core;
 
 public class Printer {
 

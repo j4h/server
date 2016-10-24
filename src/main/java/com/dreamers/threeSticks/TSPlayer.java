@@ -1,6 +1,6 @@
-package com.dreamers.TSGamePackage;
+package com.dreamers.threeSticks;
 
-import com.dreamers.GameCore.Player;
+import com.dreamers.core.Player;
 
 public class TSPlayer extends Player {
 

@@ -1,6 +1,6 @@
-package com.dreamers.TSGamePackage;
+package com.dreamers.threeSticks;
 
-import com.dreamers.GameCore.Printer;
+import com.dreamers.core.Printer;
 
 import java.util.List;
 

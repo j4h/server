@@ -1,6 +1,6 @@
-package com.dreamers.TSGamePackage;
+package com.dreamers.threeSticks;
 
-import com.dreamers.GameCore.Card;
+import com.dreamers.core.Card;
 
 import java.util.List;
 import java.util.Objects;

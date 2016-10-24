@@ -1,6 +1,4 @@
-package com.dreamers.GameCore;
-
-import com.fasterxml.jackson.annotation.JsonProperty;
+package com.dreamers.core;
 
 public class Card {
 

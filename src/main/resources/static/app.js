@@ -28,7 +28,7 @@ function disconnect() {
 }
 
 function send() {
-    stompClient.send("/app/hello");
+    stompClient.send("/app/players");
     console.log("Message sent!");
 }
 
@@ -36,7 +36,16 @@ function subscribe() {
     stompClient.subscribe('/topic/players', function (player) {
         showMessage(JSON.parse(player.body))
     });
-    console.log("subscribed!")
+    console.log("subscribed to players!");
+
+    stompClient.subscribe('/queue/errors', function (error) {
+        showMessage(JSON.parse(error.body))
+    });
+    console.log("subscribed to errors!");
+}
+
+function sendName() {
+    stompClient.send("/app/player", {}, ($("#pid").val()));
 }
 
 function showMessage(message) {
@@ -51,5 +60,6 @@ $(function () {
     $( "#disconnect" ).click(function() { disconnect(); });
     $( "#send" ).click(function() { send(); });
     $( "#subscribe" ).click(function() { subscribe(); });
+    $( "#sendID" ).click(function() { sendName(); });
 });
 

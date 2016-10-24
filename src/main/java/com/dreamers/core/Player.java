@@ -1,4 +1,4 @@
-package com.dreamers.GameCore;
+package com.dreamers.core;
 
 import java.util.ArrayList;
 import java.util.List;

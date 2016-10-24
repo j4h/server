@@ -1,6 +1,6 @@
-package com.dreamers.GameCore;
+package com.dreamers.core;
 
-import com.dreamers.TSGamePackage.GameManager;
+import com.dreamers.threeSticks.GameManager;
 
 public class Main {
 

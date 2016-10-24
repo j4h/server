@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>WebSocket</title>
+    <title>MyOwnSocket</title>
     <link href="/webjars/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="/main.css" rel="stylesheet">
     <script src="/webjars/jquery/jquery.min.js"></script>
@@ -25,6 +25,15 @@
                     <button id="disconnect" class="btn btn-default" type="submit" disabled="disabled">Disconnect
                     </button>
                 </div>
+            </form>
+        </div>
+        <div class="col-md-6">
+            <form class="form-inline">
+                <div class="form-group">
+                    <label for="pid">Find player</label>
+                    <input type="text" id="pid" class="form-control" placeholder="Your ID here...">
+                </div>
+                <button id="sendID" class="btn btn-default" type="submit">Pew</button>
             </form>
         </div>
       </div>

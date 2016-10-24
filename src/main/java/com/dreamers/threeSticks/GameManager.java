@@ -1,10 +1,10 @@
-package com.dreamers.TSGamePackage;
+package com.dreamers.threeSticks;
 
-import com.dreamers.GameCore.*;
-import com.dreamers.Moves.ts.BlindChangeMove;
-import com.dreamers.Moves.Move;
-import com.dreamers.Moves.SkipMove;
-import com.dreamers.GameCore.Player;
+import com.dreamers.core.*;
+import com.dreamers.moves.ts.BlindChangeMove;
+import com.dreamers.moves.Move;
+import com.dreamers.moves.SkipMove;
+import com.dreamers.core.Player;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -27,30 +27,6 @@ public class GameManager implements CoreManagerDataSource, CoreManagerDelegate {
     private int endRoundCounter = 0;
     private int skipMoveQuantityInSequence = 0;
 
-    public List<Player> getPlayersQuantityAndNicknames() {
-
-        //create fake players
-        List<Player> playerss = new ArrayList<>();
-        TSPlayer player, player1, player2;
-        String g = "d";
-        String r = "st";
-        String h = "lt";
-        player = new TSPlayer(g);
-        player1 = new TSPlayer(r);
-        player2 = new TSPlayer(h);
-
-        players.add(player);
-        players.add(player1);
-        players.add(player2);
-        return playerss;
-       /* for (int i =0; i<playersQuantity; i++){
-            System.out.print("Enter nickname, please: ");
-            String name = scanner.next();
-            TSPlayer player = new TSPlayer(name);
-            players.add(player);
-        }*/
-    }
-
     @Override
     public List<Card> detectAndFillDeck() {
        return gameTable.fill36CardsDeck();
@@ -69,7 +45,6 @@ public class GameManager implements CoreManagerDataSource, CoreManagerDelegate {
     }
 
     @Override
-    //TODO how to send notifications till method runs
     public Player dealCards(Player player) {
 
         for (int i = 0; i < 3; i++)
@@ -184,6 +159,31 @@ public class GameManager implements CoreManagerDataSource, CoreManagerDelegate {
         }
 
         return false;
+    }
+
+    @Override
+    public List<Player> getPlayersQuantityAndNicknames() {
+
+        //create fake players
+        List<Player> playerss = new ArrayList<>();
+        TSPlayer player, player1, player2;
+        String g = "d";
+        String r = "st";
+        String h = "lt";
+        player = new TSPlayer(g);
+        player1 = new TSPlayer(r);
+        player2 = new TSPlayer(h);
+
+        players.add(player);
+        players.add(player1);
+        players.add(player2);
+        return playerss;
+       /* for (int i =0; i<playersQuantity; i++){
+            System.out.print("Enter nickname, please: ");
+            String name = scanner.next();
+            TSPlayer player = new TSPlayer(name);
+            players.add(player);
+        }*/
     }
 
     private boolean endRoundWithoutAny31PointsCondition() {
